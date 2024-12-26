@@ -1,0 +1,139 @@
+﻿
+<style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /* Signup Container */
+    .signup-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Form Styles */
+    .signup-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333333;
+            box-sizing: border-box;
+        }
+
+            .form-group input:focus {
+                outline: none;
+                border-color: #007bff;
+                box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            }
+
+    /* Button Styles */
+    .signup-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .signup-btn:hover {
+            background-color: #0056b3;
+        }
+        sup{
+            color:red;
+        }
+
+    /* Signin Link */
+    .signin-link {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #555555;
+    }
+
+        .signin-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .signin-link a:hover {
+                text-decoration: underline;
+            }
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <form class="signup-form">
+            <h2>Create an Account</h2>
+            <div>
+            <div class="form-group">
+                    <label for="txtUsername">Full Name<sup>*</sup></label>
+                    <input type="text" id="txtUsername" name="txtUsername" placeholder="Enter your Fullname" required>
+            </div>
+
+            <div class="form-group">
+                    <label for="txtaddress">Address<sup>*</sup></label>
+                    <input type="text" id="txtaddress" name="txtaddress" placeholder="Enter your Address" required>
+            </div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="txtEmail">Email<sup>*</sup></label>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mobile No<sup>*</sup></label>
+                    <input type="text" id="txtMobile" name="txtMobile" placeholder="Enter your Email" required>
+                </div>
+            </div>
+           
+
+           
+
+            <button type="submit" class="signup-btn">Sign Up</button>
+
+            <p class="signin-link">Already have an account? <a href="#">Sign in</a></p>
+        </form>
+    </div>
+</body>
+</html>
